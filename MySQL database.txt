@@ -1,0 +1,12 @@
+CREATE DATABASE todo_app;
+USE todo_app;
+
+CREATE TABLE tasks (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    description VARCHAR(255),
+    status VARCHAR(20) DEFAULT 'Pending'
+);
+
+INSERT INTO tasks (description, status) VALUES ('Welcome Task', 'Pending');
+
+SELECT * FROM tasks; 
